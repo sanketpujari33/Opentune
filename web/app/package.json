@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -p . && vite build",
+    "dev": "node init && vite",
+    "build": "node init && tsc -p . && vite build",
     "preview": "vite preview",
     "typecheck": "tsc -p . && tsc -p tsconfig.node.json",
     "test": "vitest run --passWithNoTests"

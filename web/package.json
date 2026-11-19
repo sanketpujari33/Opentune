@@ -7,11 +7,11 @@
     "node": ">=22"
   },
   "scripts": {
-    "dev": "pnpm --filter @opentune/app dev",
-    "dev:ext": "pnpm --filter @opentune/extension dev",
-    "dev:ext:firefox": "pnpm --filter @opentune/extension dev:firefox",
-    "build": "pnpm -r build",
-    "build:site": "pnpm --filter @opentune/extension package && pnpm --filter @opentune/app build",
+    "dev": "node init && pnpm --filter @opentune/app dev",
+    "dev:ext": "node init && pnpm --filter @opentune/extension dev",
+    "dev:ext:firefox": "node init && pnpm --filter @opentune/extension dev:firefox",
+    "build": "node init && pnpm -r build",
+    "build:site": "node init && pnpm --filter @opentune/extension package && pnpm --filter @opentune/app build",
     "typecheck": "pnpm -r typecheck",
     "test": "node scripts/prepare-fixtures.mjs && pnpm -r test",
     "fixtures": "node scripts/capture-fixtures.mjs"

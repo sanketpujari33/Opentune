@@ -40,3 +40,5 @@ website-reports/
 
 # Design-check hook cache
 .impeccable/
+config.bat
+node_modules

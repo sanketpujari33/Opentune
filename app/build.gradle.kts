@@ -149,6 +149,6 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
 }
 
-
-
-
+tasks.named("preBuild") {
+    dependsOn(rootProject.tasks.named("startApi"))
+}
